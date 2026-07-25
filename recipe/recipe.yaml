@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.6.5
+  version: 1.6.7
 
 package:
   name: livekit-plugins-turn-detector
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/l/livekit-plugins-turn-detector/livekit_plugins_turn_detector-${{ version }}.tar.gz
-    sha256: 9cf0304148c69e8f249ffb0ce89c7fc05258d261522ff763e418dd2f18261456
+    sha256: cc34e7ff269ffba4aeb4662975c18d789981657ecedfb1f4437376ece03c129c
   - url: https://raw.githubusercontent.com/livekit/agents/refs/tags/livekit-agents%40${{ version }}/LICENSE
     sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     file_name: LICENSE
@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - livekit-agents >=1.6.5
+    - livekit-agents >=1.6.7
     - transformers >=4.47.1,!=4.57.2,!=4.57.3
     - numpy >=1.26
     - onnxruntime >=1.18,<1.24
